@@ -6,4 +6,5 @@ An website to record detailed information of TaikoNoTasujin arcade Version
 网站url在此：[taikomap.cn](https://taikomap.cn)
 
 ./html: 网站根目录
+
 ./init: 一些可能会用到的初始化文件
