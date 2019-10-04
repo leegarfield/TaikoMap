@@ -1,0 +1,34 @@
+{
+  "short_name": "TaikoMap",
+  "name": "TaikoMap-太鼓地图",
+  "icons": [
+    {
+      "src": "static/image/icons/logo@96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "static/image/icons/logo@128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "static/image/icons/logo@192.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "static/image/icons/logo@192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "static/image/icons/logo@288.png",
+      "type": "image/png",
+      "sizes": "288x288"
+    }
+  ],
+  "start_url": "index.php?PWA=true",
+  "display": "standalone",
+  "theme_color": "#ff5385"
+}

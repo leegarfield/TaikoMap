@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /php/
+Disallow: /admin/
+Disallow: /error/
+Disallow: /log/
+Disallow: /ass/
+Disallow: /temlate/
+Disallow: /search
+Disallow: /account
+Disallow: /badlist.html
+Disallow: /m/
