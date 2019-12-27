@@ -22,7 +22,7 @@ class PageOpreate{
     
     // update city list
     public function updateCityList(){
-        require_once ('php/Character.php');
+        require_once (PATH.'/php/Character.php');
         $mysqli = connect();
         $sql = 'select * from gamecenter';
         $result = fetchAll($sql, $mysqli);

@@ -15,9 +15,11 @@ define('DBDBNAME','TaikoMap');
 
 //环境相关
 // change this to the location of the errorlog file
-define('ERROR_LOG','Location/TaikoMap/logs/error_log.txt');
+define('ERROR_LOG','Location/TaikoMap/html/logs/error_log.txt');
 // change this to the location of the template folder
-define('TEMPLATEPATH','Location/TaikoMap/template/');
+define('TEMPLATEPATH','Location/TaikoMap/html/template/');
+// change this to the location of the html folder
+define('PATH','Location/TaikoMap/html/');
 // change this to localhost if debug
 define('HOST','http://taikomap.cn');
 // define('HOST','http://localhost');

@@ -93,4 +93,8 @@ if(isset($_COOKIE['num'])){
 
 logToDatabase($start, $user, $actiontype, $drum, '', '', $logger);
 
+//update citylist;
+$pageOp = new PageOpreate;
+$pageOp->updateCityList();
+
 header("Location: ".HOST."/map.php?p=".urlencode($arr['city']));

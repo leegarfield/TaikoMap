@@ -10,9 +10,6 @@ require_once ('include.php');
 require_once ('php/Character.php');
 require_once ('php/template.php');
 
-$pageOp = new PageOpreate;
-$pageOp->updateCityList();
-
 //login check
 $acc = logincheck();
 require_once('template/header.php');
