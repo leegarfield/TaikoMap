@@ -97,7 +97,7 @@ array_multisort($tickNUMs, SORT_DESC, $TickPlayerList);
             <h4 class="area-lable"><strong>最近活跃的游戏厅</strong></h4>
             <div class="row nomargin">
 <?php
-  $best_drum = array_column($result_drum, 'NUM');
+  // $best_drum = array_column($result_drum, 'NUM');
   foreach ($gamecenter_nearst as $key => $val){
     
     echo createGC($val, $result_drum);

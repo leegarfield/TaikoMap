@@ -250,7 +250,7 @@ function createGC(array $gamecenterInfo, array $drumList = []){
   
   $returnHtml = '
   <div class="col-xs-12 col-sm-6 col-lg-4 map-drum-list">
-    <a href="gamecenter/' . $gamecenterInfo['NUM'] . '" class="list-border href-nounderline">';
+    <a href="/gamecenter/' . $gamecenterInfo['NUM'] . '" class="list-border href-nounderline">';
   
   if(isset($gamecenterInfo['best_drum'])){
     if(sizeof($drumList)<1){

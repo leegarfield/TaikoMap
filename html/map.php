@@ -50,55 +50,10 @@ $result2 = fetchAll($sql2, $start);
 $h = 0;
 $best_drum = array_column($result2, 'NUM');
 foreach ($result as $key => $val){
-  $h ++;
-  $best_drum_index = array_keys($best_drum, $val['best_drum']);
-  $drum = $result2[$best_drum_index[0]];
+  // $best_drum_index = array_keys($best_drum, $val['best_drum']);
 
-  $drum = frameClassToDrum($drum);
-  $drum_version = $drum['version'];
+  echo createGC($val, $result2);
   
-  $drum['last_action'] = handleLastAction($val, $time);
-  
-?>
-        <div class="col-sm-6 col-xs-12 col-lg-4 map-drum-list" id="list<?=$h?>">
-          <a href="gamecenter.php?g=<?=$val['NUM']?>" class="list-border href-nounderline">
-            <div class="list <?=$drum['frame_class']?>">
-<?php
-  if($val['best_drum']){
-    $drumface = judgedrum($drum);
-?>
-              <div class="drumbox">
-                <div class="map-drum-right">
-                  <span class="drum drumbg"></span>
-                  <span class="drum x-l <?=$drumface['2p']['x-l']?>"></span>
-                  <span class="drum x-r <?=$drumface['2p']['x-r']?>"></span>
-                  <span class="drum o-l <?=$drumface['2p']['o-l']?>"></span>
-                  <span class="drum o-r <?=$drumface['2p']['o-r']?>"></span>
-                </div>
-                <div class="map-drum-left">
-                  <span class="drum drumbg"></span>
-                  <span class="drum x-l <?=$drumface['1p']['x-l']?>"></span>
-                  <span class="drum x-r <?=$drumface['1p']['x-r']?>"></span>
-                  <span class="drum o-l <?=$drumface['1p']['o-l']?>"></span>
-                  <span class="drum o-r <?=$drumface['1p']['o-r']?>"></span>
-                </div>
-                <span class="volume-l glyphicon glyphicon-volume-<?=$drum['1p_audio_class']?>" aria-hidden="true"></span>
-                <span class="volume-r glyphicon glyphicon-volume-<?=$drum['2p_audio_class']?>" aria-hidden="true"></span>
-                <div class="drum-screen <?=$drum['screen']?>"></div>
-              </div>
-<?php
-      }else{
-        $drum['coinPerTrack'] = '<i>尚未添加框体</i>';
-      }
-?>
-              <p><strong><?=$val['place']?></strong></p>
-              <p><?=$val['name']?></p>
-              <p><?=$drum['version']?> <?=$drum['coinPerTrack']?></p>
-              <p><?=$drum['last_action']?></p>
-            </div>
-          </a>
-        </div>
-<?php
 }
 ?>
         
