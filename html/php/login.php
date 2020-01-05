@@ -35,7 +35,7 @@ if (passwordVerify($_POST['password'], $result['password'], $mysqli)){
     $arr['login_time'] = $time;
     setcookie('token',$result['token'],$cookieExpTime, '/');
   }else{
-    $arr['token'] = passwordCrypt($time.$nickname.'this is a rendom char!');
+    $arr['token'] = passwordCrypt($time.$nickname.'this is a rendom char!'.rand(1111,999999999));
     $arr['login_time'] = $time;
     setcookie('token',$arr['token'],$cookieExpTime, '/');
   }
