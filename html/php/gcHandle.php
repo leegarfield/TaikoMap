@@ -102,6 +102,14 @@ logToDatabase($start, $user, $actiontype, $drum, '', '', $logger);
 
 //update citylist;
 $pageOp = new PageOpreate;
-//$pageOp->updateCityList();
+if ($_COOKIE['num'] == 100){
+
+  ini_set("display_errors", "On");
+  error_reporting(E_ALL | E_STRICT);
+
+  $pageOp->updateCityList();
+
+  exit;
+}
 
 header("Location: ".HOST."/map.php?p=".urlencode($arr['city']));
