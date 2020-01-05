@@ -65,7 +65,8 @@ $result = fetchOne($sql, $start);
 setcookie('token',$arr['token'],$cookieExpTime, '/');
 setcookie('num',$result['NUM'],$cookieExpTime, '/');
 
-logToDatabase($start, $result['NUM'], 'signup', 'none');
+
+logToDatabase($start, $result['NUM'], 'signup', '', '', '', '【'.$arr['nickname'].'】-ip：【'.$_SERVER['REMOTE_ADDR'].'】');
 
 header("Location: ".HOST);
 
