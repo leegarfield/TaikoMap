@@ -25,6 +25,13 @@ if(!$_POST['name']){
   exit;
 }
 
+//tempoary login check
+$acc = logincheck();
+if(!isset($acc['num'])){
+  header("Location: ".HOST."/template/error.php?msg=".urlencode("请注册或登录后操作！"));
+  exit;
+}
+
 $arr['city'] = addslashes($_POST['city']);
 $arr['area'] = addslashes($_POST['area']);
 $arr['place'] = addslashes($_POST['place']);
