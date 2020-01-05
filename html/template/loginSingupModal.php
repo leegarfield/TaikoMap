@@ -116,7 +116,7 @@ if (isset($acc['NUM'])){
 
             unSyncPost(post, '/php/signup.php', function(data){
               if(data == 'success'){
-                $('#signupModal_alert').text('注册成功！即将自动<a href="/">刷新页面</a>');
+                $('#signupModal_alert').html('注册成功！即将自动<a href="/">刷新页面</a>');
                 $('#signupModal_alert').parent().removeClass('alert-warning');
                 $('#signupModal_alert').parent().removeClass('alert-danger');
                 $('#signupModal_alert').parent().addClass('alert-success');
