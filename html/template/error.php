@@ -8,6 +8,7 @@ $title = 'error - TaikoMap太鼓地图';
 require_once('../include.php');
 
 //log
+$start = connect();
 if(isset($_COOKIE['num'])){
   $acc = logincheck();
   $user = $acc['NUM'];
@@ -16,7 +17,7 @@ if(isset($_COOKIE['num'])){
   $user = $_SERVER['REMOTE_ADDR'];
 }
 
-logToDatabase($user, 'error', '', '', '', $_GET['msg']);
+logToDatabase($start, $user, 'error', '', '', '', $_GET['msg']);
 
 require_once('./header.php');
 ?>
