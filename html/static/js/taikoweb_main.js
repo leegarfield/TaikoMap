@@ -117,5 +117,7 @@ $(document).ready(function(){
 // url: '/php/action.php'
 // callbackFunc: A function
 function unSyncPost(postForm, url, callbackFunc){
-  $.post(url, postForm, callbackFunc(data));
+  $.post(url, postForm, function(data){
+    callbackFunc(data);
+  });
 }
