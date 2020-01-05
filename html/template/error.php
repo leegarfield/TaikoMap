@@ -7,6 +7,17 @@ $title = 'error - TaikoMap太鼓地图';
 
 require_once('../include.php');
 
+//log
+if(isset($_COOKIE['num'])){
+  $acc = logincheck();
+  $user = $acc['NUM'];
+
+}else{
+  $user = $_SERVER['REMOTE_ADDR'];
+}
+
+logToDatabase($user, 'error', '', '', '', $_GET['msg']);
+
 require_once('./header.php');
 ?>
   <body data-pinterest-extension-installed="cr1.39.1">
