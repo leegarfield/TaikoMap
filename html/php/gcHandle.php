@@ -26,8 +26,11 @@ if(!$_POST['name']){
 }
 
 //tempoary login check
-$acc = logincheck();
-if(!$acc['NUM']){
+if(isset($_COOKIE['num'])){
+  $acc = logincheck();
+  $user = $acc['NUM'];
+  if
+}else{
   header("Location: ".HOST."/template/error.php?msg=".urlencode("请注册或登录后操作！"));
   exit;
 }
@@ -102,6 +105,6 @@ logToDatabase($start, $user, $actiontype, $drum, '', '', $logger);
 
 //update citylist;
 $pageOp = new PageOpreate;
-$pageOp->updateCityList();
+//$pageOp->updateCityList();
 
 header("Location: ".HOST."/map.php?p=".urlencode($arr['city']));
