@@ -26,11 +26,8 @@ if(!$_POST['name']){
 }
 
 //tempoary login check
-if(isset($_COOKIE['num'])){
-  $acc = logincheck();
-  $user = $acc['NUM'];
-  if
-}else{
+$acc = logincheck();
+if(!isset($acc['NUM'])){
   header("Location: ".HOST."/template/error.php?msg=".urlencode("请注册或登录后操作！"));
   exit;
 }
