@@ -15,7 +15,7 @@ $drum = intval($_POST['drum']);
 
 //tempoary login check
 $acc = logincheck();
-if(!isset($acc['num'])){
+if(!isset($acc['NUM'])){
   header("Location: ".HOST."/template/error.php?msg=".urlencode("请注册或登录后操作！"));
   exit;
 }
