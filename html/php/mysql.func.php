@@ -67,7 +67,7 @@ function sqlaction($sql, $mysqli){
 
 
 //verlify token_get_all
-function logincheck(){
+function logincheck($blackListCheck = false){
   if(isset($_COOKIE['token'])){
     $timecheck = time();
     
@@ -76,6 +76,12 @@ function logincheck(){
     $sql = 'select * from player_table where token = "'.$_COOKIE['token'].'"';
     if ($result = fetchOne($sql, $mysqli)){
       if ($timecheck - $result['login_time'] <= 2678400){
+        if($blackListCheck){
+            if($result['info_is_black']){
+                header("Location: ".HOST."/template/error.php?msg=".urlencode($result['nickname']."#".$result['NUM']."：您已被加入黑名单！"));
+                exit;
+            }
+        }
         return $result;
       }
     }

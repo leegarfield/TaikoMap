@@ -25,8 +25,8 @@ if(!$_POST['name']){
   exit;
 }
 
-//tempoary login check
-$acc = logincheck();
+//tempoary login check with black list check
+$acc = logincheck(true);
 if(!isset($acc['NUM'])){
   header("Location: ".HOST."/template/error.php?msg=".urlencode("请注册或登录后操作！"));
   exit;
