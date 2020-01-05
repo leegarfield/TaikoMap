@@ -13,6 +13,14 @@ $table = 'drum';
 
 $drum = intval($_POST['drum']);
 
+//tempoary login check
+$acc = logincheck();
+if(!isset($acc['num'])){
+  header("Location: ".HOST."/template/error.php?msg=".urlencode("请注册或登录后操作！"));
+  exit;
+}
+
+
 if($_POST['mode']=='edit'){
   $actiontype = 'editDrum';
   
