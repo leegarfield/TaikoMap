@@ -298,7 +298,7 @@ p.nav-top{
   border-bottom: 1px solid #ccc;
   background-color: #fff9;
 }
-p.nav-bottom{
+div.nav-bottom{
   background-color: #fff;
 }
 .nav span{
