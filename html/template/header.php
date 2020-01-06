@@ -1,5 +1,5 @@
 <?php 
-$timestamp = 2020010601;
+$timestamp = 2020010602;
 
 if (isset($acc['NUM']) && $acc['NUM'] = 1){
   $noStatic = true;

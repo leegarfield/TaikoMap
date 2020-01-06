@@ -85,7 +85,7 @@ array_multisort($tickNUMs, SORT_DESC, $TickPlayerList);
             <p class="hidden-xs"><?php require ('./template/citylist.html'); ?><span><strong>+</strong> <a href="/addGC.php">添加游戏厅</a></span> </p>
           </div>
           <div class="area-box">
-            <p class="index-ann-p">新网站更新了一些底层代码，若出现bug，请前往 <a href="https://taikomap.brs-craft.cn">taikomap.brs-craft.cn</a> 访问旧站点</p>
+            <p class="index-ann-p">网站持续开发中，若出现bug，可前往 <a href="https://taikomap.brs-craft.cn">taikomap.brs-craft.cn</a> 访问旧站点</p>
           </div>
 <?php
 
@@ -158,9 +158,9 @@ array_multisort($tickNUMs, SORT_DESC, $TickPlayerList);
               </div>
               <div class="col-xs-12">
                 <hr />
-                <!-- <p>鼓况展示模板与一些鼓况解释。。。</p> -->
+                <p>鼓况展示模板与一些鼓况解释。。。</p>
               </div>
-              <!-- <div class="col-sm-6 col-xs-12 col-lg-4 map-drum-list">
+              <div class="col-sm-6 col-xs-12 col-lg-4 map-drum-list">
                 <div class="list-border">
                   <div class="list j-pop">
                     <div class="drumbox">
@@ -277,12 +277,12 @@ array_multisort($tickNUMs, SORT_DESC, $TickPlayerList);
                     <p>屏幕色调偏紫色</p>
                   </div>
                 </div>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
         <div class="col-xs-12 index-foot">
-          <p>© 2019 Leegarfield682 | <a href="http://beian.miitbeian.gov.cn" target="_blank">粤ICP备16032872号-2</a></p>
+          <p>© 2019-2020 Leegarfield682 | <a href="http://beian.miitbeian.gov.cn" target="_blank">粤ICP备16032872号-2</a></p>
         </div>
       
     </div>

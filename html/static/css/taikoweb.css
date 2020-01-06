@@ -285,6 +285,9 @@ to {background-position-x: -200px;}
   top: 0px;
   border-bottom: 1px solid #ccc;
   padding: 0px;
+  background-image: url(/static/image/bg/para.jpg);
+  background-size: 500px;
+  background-repeat: repeat; 
 }
 
 p.nav-top{
@@ -293,6 +296,10 @@ p.nav-top{
   font-size: 14px;
   margin: 0px;
   border-bottom: 1px solid #ccc;
+  background-color: #fff9;
+}
+p.nav-bottom{
+  background-color: #fff;
 }
 .nav span{
   display: inline-block;
