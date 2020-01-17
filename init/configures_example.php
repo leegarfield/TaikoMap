@@ -1,6 +1,6 @@
 <?php
 
-// copy this file to /html/configures.php
+// copy this file to /html/config/configures.php
 
 //调试开关
 //this do nothing
