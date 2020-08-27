@@ -7,7 +7,6 @@ $title = "TaikoMap太鼓地图";
 $time = time();
 
 require_once ('include.php');
-require_once ('php/Character.php');
 require_once ('php/template.php');
 
 //login check

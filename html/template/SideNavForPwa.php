@@ -21,6 +21,12 @@ if (isset($acc['token'])){
                 <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
                 <span class="index-side-big">查看log</span>
               </p>
+            </a>
+            <a class="href href-nounderline href-text-nomal display-block" href="/php/admin_action.php?a=regen_html">
+              <p class="side-nav-small">
+                <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+                <span class="index-side-big">重生成html</span>
+              </p>
             </a>';
   }
   $bannerText .= '
@@ -122,7 +128,7 @@ if(isset($side_gamecenter)){
             <span id="city-list-arrow" class="caret js-spoil-rotate-180 arrow-rotate-on-click"></span>
           </p>
           <div class="slide-up-on-click" id="city-list" style="display:none;">
-            <p class="side-nav-citylist"><?php require ('./template/citylist.html'); ?></p>
+            <p class="side-nav-citylist"><?php require ('./template/html/citylist.html'); ?></p>
           </div>
         </div>
       </div>
