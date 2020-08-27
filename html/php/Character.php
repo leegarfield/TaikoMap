@@ -56,7 +56,16 @@ class Character
  public function getInitials($str)
  {
   if (empty($str)) {return '';}
-  $fchar = ord($str{0});
+
+   //棘手的特例处理。。。
+   if(mb_substr($str, 0, 1) == "濮"){
+     return 'P';
+    }
+    if($str == "重庆"){
+      return 'C';
+    }
+
+  $fchar = ord(substr($str,0,1));
   if ($fchar >= ord('A') && $fchar <= ord('z')) {
    return strtoupper(substr($str,0,1));
   }
