@@ -79,9 +79,9 @@ array_multisort($tickNUMs, SORT_DESC, $TickPlayerList);
             <h4 class="area-lable"><strong>城市一览</strong></h4>
             <div>
               <p class="js-spoil visible-xs">点击展开<span class="caret js-spoil-rotate-180"></span></p>
-              <p class="showUntil-S hidden-sm hidden-md hidden-lg" style="display:none;"><?php require ('./template/citylist.html'); ?><span><strong>+</strong> <a href="/addGC.php">添加游戏厅</a></span> </p>
+              <p class="showUntil-S hidden-sm hidden-md hidden-lg" style="display:none;"><?php require ('./template/html/citylist.html'); ?><span><strong>+</strong> <a href="/addGC.php">添加游戏厅</a></span> </p>
             </div>
-            <p class="hidden-xs"><?php require ('./template/citylist.html'); ?><span><strong>+</strong> <a href="/addGC.php">添加游戏厅</a></span> </p>
+            <p class="hidden-xs"><?php require ('./template/html/citylist.html'); ?><span><strong>+</strong> <a href="/addGC.php">添加游戏厅</a></span> </p>
           </div>
           <div class="area-box">
             <p class="index-ann-p">网站持续开发中，若出现bug，可前往 <a href="https://taikomap.brs-craft.cn">taikomap.brs-craft.cn</a> 访问旧站点</p>
