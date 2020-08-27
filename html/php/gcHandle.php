@@ -104,4 +104,4 @@ logToDatabase($start, $user, $actiontype, $drum, '', '', $logger);
 $pageOp = new PageOpreate;
 $pageOp->updateCityList();
 
-header("Location: ".HOST."/map.php?p=".urlencode($arr['city']));
+// header("Location: ".HOST."/map.php?p=".urlencode($arr['city']));

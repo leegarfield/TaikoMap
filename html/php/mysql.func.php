@@ -42,13 +42,13 @@ function delete($table,$where=null){
     return true;
 }
 
-function fetchOne($sql, $mysqli, $result_type=MYSQL_ASSOC){
+function fetchOne($sql, $mysqli, $result_type='MYSQL_ASSOC'){
     $result = $mysqli->query($sql);
     $row = $result -> fetch_assoc();
     return $row;
 }
 
-function fetchAll($sql, $mysqli, $result_type=MYSQL_ASSOC){
+function fetchAll($sql, $mysqli, $result_type='MYSQL_ASSOC'){
     $result = $mysqli -> query($sql);
     while($row = $result -> fetch_assoc()){
         $rows[] = $row;

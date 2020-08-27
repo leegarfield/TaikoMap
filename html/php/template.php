@@ -10,14 +10,15 @@ class PageOpreate{
     private $templatePath;
     private $content;
 
-    public function PageOpreate(){
+    public function construst(){
         $this->templatePath = TEMPLATEPATH;
         $this->content = '';
     }
 
     private function pageSave($content, $target){
         $target = $this->templatePath . $target;
-        file_put_contents($target, $content);
+        $content .= PATH;
+        file_put_contents('E:\Minecraft\Web\TaikoMap_new\html\template\html\citylist.html', $content);
     }
     
     // update city list
@@ -34,6 +35,7 @@ class PageOpreate{
             }
         }
         $citylist['Ordered'] = (new Character)->groupByInitials_s($citylist['unOrdered']);
+
         $this->content = '';
         foreach($citylist['Ordered'] as $key => $val){
             $this->content .= '<span><strong>' . $key . '</strong> ';
@@ -48,6 +50,6 @@ class PageOpreate{
     
     //update all page
     public function updateAll(){
-        updateCityList();
+        $this->updateCityList();
     }
 }
