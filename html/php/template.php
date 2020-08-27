@@ -17,8 +17,8 @@ class PageOpreate{
 
     private function pageSave($content, $target){
         $target = $this->templatePath . $target;
-        $content .= PATH;
-        file_put_contents('E:\Minecraft\Web\TaikoMap_new\html\template\html\citylist.html', $content);
+        $content .= TEMPLATEPATH;
+        file_put_contents(TEMPLATEPATH .'citylist.html', $content);
     }
     
     // update city list
