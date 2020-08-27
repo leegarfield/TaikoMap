@@ -17,7 +17,7 @@ class PageOpreate{
 
     private function pageSave($content, $target){
         $target = $this->templatePath . $target;
-        $content .= TEMPLATEPATH;
+        // $content .= TEMPLATEPATH;
         file_put_contents(TEMPLATEPATH .'citylist.html', $content);
     }
     
