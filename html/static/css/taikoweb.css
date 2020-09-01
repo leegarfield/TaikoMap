@@ -734,6 +734,7 @@ p.nomargin {
   background-repeat: no-repeat;
   background-size: 256px;
   background-image: url('/static/image/drum.png?v=2');
+  background-position-y: 65px;
 }
 
 .drumbox span.x-l{
