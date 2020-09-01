@@ -16,6 +16,7 @@ if (isset($acc['token'])){
             </a>';
   if($acc['info_is_admin']){
     $bannerText .= '
+            <hr class="side-nav-hr" />
             <a class="href href-nounderline href-text-nomal display-block" href="/log.php">
               <p class="side-nav-small">
                 <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
@@ -25,7 +26,7 @@ if (isset($acc['token'])){
             <a class="href href-nounderline href-text-nomal display-block" href="/php/admin_action.php?a=regen_html">
               <p class="side-nav-small">
                 <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
-                <span class="index-side-big">重生成html</span>
+                <span class="index-side-big">重生成模板</span>
               </p>
             </a>';
   }
