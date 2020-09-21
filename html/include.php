@@ -1,4 +1,5 @@
 <?php
+session_start();
 ini_set('date.timezone','Asia/Shanghai');
 define('WRT', dirname(__FILE__));
 // require_once ('config/configures.php');
