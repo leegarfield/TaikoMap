@@ -73,7 +73,7 @@ function logincheck($blackListCheck = false){
     
     $table = 'player_table';
     $mysqli = connect();
-    $sql = 'select * from player_table where token = "'.$_COOKIE['token'].'"';
+    $sql = 'select * from player_table where token = "'.addslashes($_COOKIE['token']).'"';
     if ($result = fetchOne($sql, $mysqli)){
       if ($timecheck - $result['login_time'] <= 2678400){
         if($blackListCheck){
