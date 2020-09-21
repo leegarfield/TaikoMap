@@ -16,12 +16,7 @@ $start = connect();
 
 $acc = logincheck();
 
-if ($_COOKIE['num']==100){
-  // echo session_save_path();
-}else{
-  header("Location: ".HOST."/error/404.html");
-  exit;
-}
+adminCheck();
 
 if(isset($_GET['p'])){
   if(intval($_GET['p'])<1){

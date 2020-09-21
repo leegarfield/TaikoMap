@@ -83,9 +83,9 @@ array_multisort($tickNUMs, SORT_DESC, $TickPlayerList);
             </div>
             <p class="hidden-xs"><?php require ('./template/html/citylist.html'); ?><span><strong>+</strong> <a href="/addGC.php">添加游戏厅</a></span> </p>
           </div>
-          <div class="area-box">
+          <!-- <div class="area-box">
             <p class="index-ann-p">网站持续开发中，若出现bug，可前往 <a href="https://taikomap.brs-craft.cn">taikomap.brs-craft.cn</a> 访问旧站点</p>
-          </div>
+          </div> -->
 <?php
 
 ?>

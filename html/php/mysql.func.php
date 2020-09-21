@@ -98,6 +98,20 @@ function logincheck($blackListCheck = false){
   }
 }
 
+//检测是否管理员
+function adminCheck(){
+    $acc = logincheck();
+    if($acc['info_is_admin']){
+        return true;
+    }else{
+        $table = 'player_table';
+        $mysqli = connect();
+        logToDatabase($mysqli, $acc['NUM'], 'illAdmin', time(), $acc['ip']);
+        header("Location: ".HOST."/error/404.html");
+        exit;
+    }
+}
+
 //log
 function logToDatabase($mysqli, $user, $type, $log1, $log2="", $log3="", $log_long=""){
   $logToDatabase['time'] = time();
