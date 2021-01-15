@@ -281,7 +281,7 @@ array_multisort($tickNUMs, SORT_DESC, $TickPlayerList);
           </div>
         </div>
         <div class="col-xs-12 index-foot">
-          <p>© 2019-2020 Leegarfield682 | <a href="http://beian.miitbeian.gov.cn" target="_blank">粤ICP备16032872号-2</a></p>
+          <p>© 2019-2020 Leegarfield682 | <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备16032872号-2</a></p>
         </div>
       
     </div>
